@@ -1,0 +1,212 @@
+2022-11-12 15:31:07,295 DEBUG :: Initializing HTTP session.
+2022-11-12 15:31:07,299 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 15:31:07,458 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 15:31:07,476 INFO :: Bybit Client successfully initialized
+2022-11-12 15:31:45,205 DEBUG :: Initializing HTTP session.
+2022-11-12 15:31:45,208 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 15:31:45,350 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 15:31:45,372 INFO :: Bybit Client successfully initialized
+2022-11-12 15:31:49,753 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667663700 HTTP/1.1" 200 40987
+2022-11-12 15:31:49,762 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-05 15:55:00+09:00 to 2022-11-05 19:13:00+09:00
+2022-11-12 15:31:50,963 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667675640 HTTP/1.1" 200 40892
+2022-11-12 15:31:50,965 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-05 19:14:00+09:00 to 2022-11-05 22:32:00+09:00
+2022-11-12 15:31:52,167 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667687580 HTTP/1.1" 200 41043
+2022-11-12 15:31:52,170 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-05 22:33:00+09:00 to 2022-11-06 01:51:00+09:00
+2022-11-12 15:31:53,434 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667699520 HTTP/1.1" 200 40968
+2022-11-12 15:31:53,437 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-06 01:52:00+09:00 to 2022-11-06 05:10:00+09:00
+2022-11-12 15:31:54,631 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667711460 HTTP/1.1" 200 40926
+2022-11-12 15:31:54,633 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-06 05:11:00+09:00 to 2022-11-06 08:29:00+09:00
+2022-11-12 15:31:55,831 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667723400 HTTP/1.1" 200 41059
+2022-11-12 15:31:55,833 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-06 08:30:00+09:00 to 2022-11-06 11:48:00+09:00
+2022-11-12 15:31:57,108 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667735340 HTTP/1.1" 200 40964
+2022-11-12 15:31:57,110 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-06 11:49:00+09:00 to 2022-11-06 15:07:00+09:00
+2022-11-12 15:31:58,301 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667747280 HTTP/1.1" 200 41122
+2022-11-12 15:31:58,303 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-06 15:08:00+09:00 to 2022-11-06 18:26:00+09:00
+2022-11-12 15:31:59,503 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667759220 HTTP/1.1" 200 41012
+2022-11-12 15:31:59,505 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-06 18:27:00+09:00 to 2022-11-06 21:45:00+09:00
+2022-11-12 15:32:00,701 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667771160 HTTP/1.1" 200 41242
+2022-11-12 15:32:00,703 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-06 21:46:00+09:00 to 2022-11-07 01:04:00+09:00
+2022-11-12 15:32:01,906 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667783100 HTTP/1.1" 200 41045
+2022-11-12 15:32:01,908 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-07 01:05:00+09:00 to 2022-11-07 04:23:00+09:00
+2022-11-12 15:32:03,109 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667795040 HTTP/1.1" 200 None
+2022-11-12 15:32:03,111 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-07 04:24:00+09:00 to 2022-11-07 07:42:00+09:00
+2022-11-12 15:32:04,376 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667806980 HTTP/1.1" 200 41231
+2022-11-12 15:32:04,379 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-07 07:43:00+09:00 to 2022-11-07 11:01:00+09:00
+2022-11-12 15:32:05,570 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667818920 HTTP/1.1" 200 41094
+2022-11-12 15:32:05,573 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-07 11:02:00+09:00 to 2022-11-07 14:20:00+09:00
+2022-11-12 15:32:06,765 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667830860 HTTP/1.1" 200 41121
+2022-11-12 15:32:06,768 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-07 14:21:00+09:00 to 2022-11-07 17:39:00+09:00
+2022-11-12 15:32:07,959 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667842800 HTTP/1.1" 200 41120
+2022-11-12 15:32:07,962 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-07 17:40:00+09:00 to 2022-11-07 20:58:00+09:00
+2022-11-12 15:32:09,154 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667854740 HTTP/1.1" 200 41213
+2022-11-12 15:32:09,156 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-07 20:59:00+09:00 to 2022-11-08 00:17:00+09:00
+2022-11-12 15:32:10,348 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667866680 HTTP/1.1" 200 41201
+2022-11-12 15:32:10,350 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-08 00:18:00+09:00 to 2022-11-08 03:36:00+09:00
+2022-11-12 15:32:11,542 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667878620 HTTP/1.1" 200 41350
+2022-11-12 15:32:11,544 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-08 03:37:00+09:00 to 2022-11-08 06:55:00+09:00
+2022-11-12 15:32:12,816 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667890560 HTTP/1.1" 200 41248
+2022-11-12 15:32:12,818 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-08 06:56:00+09:00 to 2022-11-08 10:14:00+09:00
+2022-11-12 15:32:14,016 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667902500 HTTP/1.1" 200 41148
+2022-11-12 15:32:14,019 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-08 10:15:00+09:00 to 2022-11-08 13:33:00+09:00
+2022-11-12 15:32:15,213 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667914440 HTTP/1.1" 200 41420
+2022-11-12 15:32:15,215 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-08 13:34:00+09:00 to 2022-11-08 16:52:00+09:00
+2022-11-12 15:32:16,416 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667926380 HTTP/1.1" 200 41583
+2022-11-12 15:32:16,419 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-08 16:53:00+09:00 to 2022-11-08 20:11:00+09:00
+2022-11-12 15:32:17,612 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667938320 HTTP/1.1" 200 41344
+2022-11-12 15:32:17,615 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-08 20:12:00+09:00 to 2022-11-08 23:30:00+09:00
+2022-11-12 15:32:18,813 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667950260 HTTP/1.1" 200 41221
+2022-11-12 15:32:18,815 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-08 23:31:00+09:00 to 2022-11-09 02:49:00+09:00
+2022-11-12 15:32:20,007 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667962200 HTTP/1.1" 200 None
+2022-11-12 15:32:20,009 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-09 02:50:00+09:00 to 2022-11-09 06:08:00+09:00
+2022-11-12 15:32:21,211 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667974140 HTTP/1.1" 200 41338
+2022-11-12 15:32:21,213 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-09 06:09:00+09:00 to 2022-11-09 09:27:00+09:00
+2022-11-12 15:32:22,450 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667986080 HTTP/1.1" 200 41499
+2022-11-12 15:32:22,453 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-09 09:28:00+09:00 to 2022-11-09 12:46:00+09:00
+2022-11-12 15:32:23,649 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1667998020 HTTP/1.1" 200 41508
+2022-11-12 15:32:23,651 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-09 12:47:00+09:00 to 2022-11-09 16:05:00+09:00
+2022-11-12 15:32:24,846 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668009960 HTTP/1.1" 200 41411
+2022-11-12 15:32:24,848 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-09 16:06:00+09:00 to 2022-11-09 19:24:00+09:00
+2022-11-12 15:32:26,048 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668021900 HTTP/1.1" 200 41402
+2022-11-12 15:32:26,051 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-09 19:25:00+09:00 to 2022-11-09 22:43:00+09:00
+2022-11-12 15:32:27,251 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668033840 HTTP/1.1" 200 41457
+2022-11-12 15:32:27,254 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-09 22:44:00+09:00 to 2022-11-10 02:02:00+09:00
+2022-11-12 15:32:28,450 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668045780 HTTP/1.1" 200 41223
+2022-11-12 15:32:28,453 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-10 02:03:00+09:00 to 2022-11-10 05:21:00+09:00
+2022-11-12 15:32:29,648 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668057720 HTTP/1.1" 200 41224
+2022-11-12 15:32:29,651 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-10 05:22:00+09:00 to 2022-11-10 08:40:00+09:00
+2022-11-12 15:32:30,847 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668069660 HTTP/1.1" 200 41238
+2022-11-12 15:32:30,849 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-10 08:41:00+09:00 to 2022-11-10 11:59:00+09:00
+2022-11-12 15:32:32,043 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668081600 HTTP/1.1" 200 41383
+2022-11-12 15:32:32,047 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-10 12:00:00+09:00 to 2022-11-10 15:18:00+09:00
+2022-11-12 15:32:33,247 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668093540 HTTP/1.1" 200 None
+2022-11-12 15:32:33,250 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-10 15:19:00+09:00 to 2022-11-10 18:37:00+09:00
+2022-11-12 15:32:34,451 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668105480 HTTP/1.1" 200 41208
+2022-11-12 15:32:34,454 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-10 18:38:00+09:00 to 2022-11-10 21:56:00+09:00
+2022-11-12 15:32:35,655 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668117420 HTTP/1.1" 200 41183
+2022-11-12 15:32:35,658 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-10 21:57:00+09:00 to 2022-11-11 01:15:00+09:00
+2022-11-12 15:32:36,931 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668129360 HTTP/1.1" 200 41209
+2022-11-12 15:32:36,934 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-11 01:16:00+09:00 to 2022-11-11 04:34:00+09:00
+2022-11-12 15:32:38,133 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668141300 HTTP/1.1" 200 41195
+2022-11-12 15:32:38,135 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-11 04:35:00+09:00 to 2022-11-11 07:53:00+09:00
+2022-11-12 15:32:39,333 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668153240 HTTP/1.1" 200 41159
+2022-11-12 15:32:39,335 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-11 07:54:00+09:00 to 2022-11-11 11:12:00+09:00
+2022-11-12 15:32:40,534 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668165180 HTTP/1.1" 200 41272
+2022-11-12 15:32:40,536 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-11 11:13:00+09:00 to 2022-11-11 14:31:00+09:00
+2022-11-12 15:32:41,751 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668177120 HTTP/1.1" 200 41334
+2022-11-12 15:32:41,753 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-11 14:32:00+09:00 to 2022-11-11 17:50:00+09:00
+2022-11-12 15:32:43,026 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668189060 HTTP/1.1" 200 41163
+2022-11-12 15:32:43,028 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-11 17:51:00+09:00 to 2022-11-11 21:09:00+09:00
+2022-11-12 15:32:44,222 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668201000 HTTP/1.1" 200 41103
+2022-11-12 15:32:44,224 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-11 21:10:00+09:00 to 2022-11-12 00:28:00+09:00
+2022-11-12 15:32:45,415 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668212940 HTTP/1.1" 200 41122
+2022-11-12 15:32:45,418 INFO :: ETHUSDT: Collected 199 recent data from 2022-11-12 00:29:00+09:00 to 2022-11-12 03:47:00+09:00
+2022-11-12 15:32:46,614 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668224880 HTTP/1.1" 200 34023
+2022-11-12 15:32:46,617 INFO :: ETHUSDT: Collected 164 recent data from 2022-11-12 03:48:00+09:00 to 2022-11-12 06:31:00+09:00
+2022-11-12 15:32:47,805 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1668234720 HTTP/1.1" 200 222
+2022-11-12 15:32:48,723 DEBUG :: https://api.bybit.com:443 "GET /public/linear/kline?symbol=ETHUSDT&interval=1&from=1603260180 HTTP/1.1" 200 39004
+2022-11-12 15:32:48,725 INFO :: ETHUSDT: No more older data found
+2022-11-12 15:32:49,706 WARNING :: ETHUSDT: No data to insert
+2022-11-12 15:34:02,564 DEBUG :: Initializing HTTP session.
+2022-11-12 15:34:02,567 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 15:34:02,726 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 15:34:02,744 INFO :: Bybit Client successfully initialized
+2022-11-12 15:40:53,164 DEBUG :: Initializing HTTP session.
+2022-11-12 15:40:53,168 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 15:40:53,332 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 15:40:53,350 INFO :: Bybit Client successfully initialized
+2022-11-12 15:41:37,251 DEBUG :: Initializing HTTP session.
+2022-11-12 15:41:37,255 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 15:41:37,396 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 15:41:37,480 INFO :: Bybit Client successfully initialized
+2022-11-12 16:34:51,189 DEBUG :: Initializing HTTP session.
+2022-11-12 16:34:51,191 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 16:34:51,327 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 16:34:51,476 INFO :: Bybit Client successfully initialized
+2022-11-12 16:36:48,682 DEBUG :: Initializing HTTP session.
+2022-11-12 16:36:48,684 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 16:36:48,831 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 16:36:48,852 INFO :: Bybit Client successfully initialized
+2022-11-12 16:39:33,676 DEBUG :: Initializing HTTP session.
+2022-11-12 16:39:33,678 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 16:39:33,823 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 16:39:33,839 INFO :: Bybit Client successfully initialized
+2022-11-12 16:40:22,865 DEBUG :: Initializing HTTP session.
+2022-11-12 16:40:22,867 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 16:40:23,006 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 16:40:23,021 INFO :: Bybit Client successfully initialized
+2022-11-12 16:42:32,901 DEBUG :: Initializing HTTP session.
+2022-11-12 16:42:32,903 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 16:42:33,040 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 16:42:33,189 INFO :: Bybit Client successfully initialized
+2022-11-12 16:43:22,983 DEBUG :: Initializing HTTP session.
+2022-11-12 16:43:22,985 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 16:43:23,130 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 16:43:23,146 INFO :: Bybit Client successfully initialized
+2022-11-12 16:44:39,165 DEBUG :: Initializing HTTP session.
+2022-11-12 16:44:39,167 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 16:44:39,304 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 16:44:39,457 INFO :: Bybit Client successfully initialized
+2022-11-12 17:16:55,618 DEBUG :: Initializing HTTP session.
+2022-11-12 17:16:55,620 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 17:16:55,769 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 17:16:55,784 INFO :: Bybit Client successfully initialized
+2022-11-12 17:17:40,463 DEBUG :: Initializing HTTP session.
+2022-11-12 17:17:40,466 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 17:17:40,613 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 17:17:40,628 INFO :: Bybit Client successfully initialized
+2022-11-12 17:17:57,909 DEBUG :: Initializing HTTP session.
+2022-11-12 17:17:57,911 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 17:17:58,066 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 17:17:58,081 INFO :: Bybit Client successfully initialized
+2022-11-12 17:41:58,187 DEBUG :: Initializing HTTP session.
+2022-11-12 17:41:58,189 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 17:41:58,331 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 17:41:58,347 INFO :: Bybit Client successfully initialized
+2022-11-12 17:50:05,437 DEBUG :: Initializing HTTP session.
+2022-11-12 17:50:05,440 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 17:50:05,597 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 17:50:05,614 INFO :: Bybit Client successfully initialized
+2022-11-12 17:54:22,478 DEBUG :: Initializing HTTP session.
+2022-11-12 17:54:22,481 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 17:54:22,622 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 17:54:22,775 INFO :: Bybit Client successfully initialized
+2022-11-12 17:57:22,094 DEBUG :: Initializing HTTP session.
+2022-11-12 17:57:22,096 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-12 17:57:22,247 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-12 17:57:22,264 INFO :: Bybit Client successfully initialized
+2022-11-13 17:36:55,734 DEBUG :: Initializing HTTP session.
+2022-11-13 17:36:55,737 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-13 17:36:55,886 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-13 17:36:55,903 INFO :: Bybit Client successfully initialized
+2022-11-13 17:38:43,996 DEBUG :: Initializing HTTP session.
+2022-11-13 17:38:43,999 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-13 17:38:44,133 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-13 17:38:44,210 INFO :: Bybit Client successfully initialized
+2022-11-13 17:42:01,591 DEBUG :: Initializing HTTP session.
+2022-11-13 17:42:01,594 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-13 17:42:01,750 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-13 17:42:01,837 INFO :: Bybit Client successfully initialized
+2022-11-13 17:52:39,052 DEBUG :: Initializing HTTP session.
+2022-11-13 17:52:39,054 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-13 17:52:39,204 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-13 17:52:39,219 INFO :: Bybit Client successfully initialized
+2022-11-13 19:04:07,894 DEBUG :: Initializing HTTP session.
+2022-11-13 19:04:07,896 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-13 19:04:08,044 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-13 19:04:08,059 INFO :: Bybit Client successfully initialized
+2022-11-13 19:04:49,834 DEBUG :: Initializing HTTP session.
+2022-11-13 19:04:49,836 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-13 19:04:49,973 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-13 19:04:49,992 INFO :: Bybit Client successfully initialized
+2022-11-13 20:58:54,210 DEBUG :: Initializing HTTP session.
+2022-11-13 20:58:54,213 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-13 20:58:54,389 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 91055
+2022-11-13 20:58:54,451 INFO :: Bybit Client successfully initialized
+2022-11-13 21:08:07,211 DEBUG :: Initializing HTTP session.
+2022-11-13 21:08:07,215 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-13 21:08:07,397 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 90600
+2022-11-13 21:08:07,420 INFO :: Bybit Client successfully initialized
+2022-11-13 21:11:37,136 DEBUG :: Initializing HTTP session.
+2022-11-13 21:11:37,140 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-13 21:11:37,296 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 90600
+2022-11-13 21:11:37,367 INFO :: Bybit Client successfully initialized
