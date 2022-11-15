@@ -210,3 +210,17 @@
 2022-11-13 21:11:37,140 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
 2022-11-13 21:11:37,296 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 90600
 2022-11-13 21:11:37,367 INFO :: Bybit Client successfully initialized
+2022-11-15 13:05:02,132 DEBUG :: Initializing HTTP session.
+2022-11-15 13:05:02,145 DEBUG :: Starting new HTTPS connection (1): api.bybit.com:443
+2022-11-15 13:05:02,291 DEBUG :: https://api.bybit.com:443 "GET /v2/public/symbols HTTP/1.1" 200 89682
+2022-11-15 13:05:02,308 INFO :: Bybit Client successfully initialized
+2022-11-15 14:52:42,231 INFO :: Bybit Client successfully initialized
+2022-11-15 14:54:53,244 INFO :: Bybit Client successfully initialized
+2022-11-15 14:58:44,470 INFO :: Bybit Client successfully initialized
+2022-11-15 14:59:37,023 INFO :: Bybit Client successfully initialized
+2022-11-15 15:02:52,710 INFO :: Bybit Client successfully initialized
+2022-11-15 15:04:31,619 INFO :: Bybit Client successfully initialized
+2022-11-15 15:08:29,554 INFO :: Bybit Client successfully initialized
+2022-11-15 15:12:29,534 INFO :: Bybit Client successfully initialized
+2022-11-15 15:14:31,137 INFO :: Bybit Client successfully initialized
+2022-11-15 15:15:57,360 INFO :: Bybit Client successfully initialized

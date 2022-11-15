@@ -12,7 +12,7 @@ import numpy as np
 from configparser import ConfigParser
 
 logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 
 formatter = logging.Formatter("%(asctime)s %(levelname)s :: %(message)s")
 stream_handler = logging.StreamHandler()
@@ -20,7 +20,7 @@ stream_handler.setFormatter(formatter)
 stream_handler.setLevel(logging.INFO)
 file_handler = logging.FileHandler("info.log")
 file_handler.setFormatter(formatter)
-file_handler.setLevel(logging.DEBUG)
+file_handler.setLevel(logging.INFO)
 # logger.addHandler(smtp_handler)
 logger.addHandler(stream_handler)
 logger.addHandler(file_handler)

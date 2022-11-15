@@ -16,10 +16,14 @@ import os.path
 import time
 import smtplib
 from configparser import ConfigParser
+import logging.handlers
 
 parser = ConfigParser()
 parser.read('config.ini')
 email = parser.get('email', 'email address')
+
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
 
 
 def run(contract: Contract, strategy: str, tf: str, from_time: int, to_time: int, initial_capital: int):
@@ -451,9 +455,10 @@ def multitest(contract: Contract, strategy: str, tf: str, days: int, hours: int,
 
     # Loop until minimum initial PNL requirement met
     pnl = -100
-    print(min_pnl)
     results = 0
+
     while results < num_results:
+        i = 0
         while pnl <= min_pnl:
             # Generate a set of random parameters
             backtest = BacktestResult()
@@ -472,58 +477,59 @@ def multitest(contract: Contract, strategy: str, tf: str, days: int, hours: int,
             backtest.parameters = params_constraints(strategy, tf, days, hours, backtest.parameters)
             pnl = initial_tester(contract, strategy, tf, days, hours, initial_capital, backtest.parameters, "m",
                                  pool)
-            print(pnl)
+            if i % 4 == 0:
+                print(f"\r{results} results complete. Running.", end=" ")
+            elif (i % 4 == 1) or (i % 4 == 3):
+                print(f"\r{results} results complete. Running..", end=" ")
+            elif i % 4 == 2:
+                print(f"\r{results} results complete. Running...", end=" ")
+            i += 1
 
-        print("PNL greater than min")
-        print(backtest.parameters)
-        m_results = tester(contract, strategy, tf, days, hours, 10, initial_capital, backtest.parameters,
-                           "s", pool)
+        m_results = tester(contract, strategy, tf, days, hours, 50, initial_capital, backtest.parameters,
+                           "s", pool, results)
         last_result = m_results.drop(m_results.index[:-1])
         last_result = last_result.reset_index()
         last_result = last_result.iloc[:, 1:]
 
-        print(last_result['pnl_avg'][0], last_result['%_positive'][0])
         pnl = -100
         if (last_result['pnl_avg'][0] > min_avg_pnl) and (last_result['%_positive'][0] > min_percent_positive) and \
                 (last_result['num_trades_avg'][0] > min_trades):
-            print("result accepted")
             test_results = pd.concat([test_results, last_result], axis=0)
             saved_parameter = pd.Series(backtest.parameters)
             saved_parameter = pd.DataFrame(saved_parameter)
             saved_parameter = saved_parameter.transpose()
             saved_parameters = pd.concat([saved_parameters, saved_parameter], axis=0)
             results += 1
+            print("\rMultitest passed", end=" ")
         else:
-            print("result rejected")
+            print("\rMultitest failed", end=" ")
 
-    print(test_results)
-    print(saved_parameters)
-    if os.path.exists(f"Random_{contract.symbol}_{tf}_{days}d_{hours}h.csv"):
+    if os.path.exists(f"FreedomFinder_Multitest_{contract.symbol}_{tf}_{days}d_{hours}h.csv"):
         while True:
             try:
-                myfile = open(f"Random_{contract.symbol}_{tf}_{days}d_{hours}h.csv", "w+")
+                myfile = open(f"FreedomFinder_Multitest_{contract.symbol}_{tf}_{days}d_{hours}h.csv", "w+")
                 break
             except IOError:
                 input(f"Cannot write results to csv file. Please close \n"
-                      f"Random_{contract.symbol}_{tf}_{days}d_{hours}h.csv\nThen press Enter to "
+                      f"FreedomFinder_Multitest_{contract.symbol}_{tf}_{days}d_{hours}h.csv\nThen press Enter to "
                       f"retry.")
-    test_results.to_csv(f"Random_{contract.symbol}_{tf}_{days}d_{hours}h.csv")
-    if os.path.exists(f"Randomized_Parameters_{contract.symbol}_{tf}_{days}d_{hours}h.csv"):
+    test_results.to_csv(f"FreedomFinder_Multitest_{contract.symbol}_{tf}_{days}d_{hours}h.csv")
+    if os.path.exists(f"FreedomFinder_Parameters_{contract.symbol}_{tf}_{days}d_{hours}h.csv"):
         while True:
             try:
-                myfile = open(f"Randomized_Parameters_{contract.symbol}_{tf}_{days}d_{hours}h.csv", "w+")
+                myfile = open(f"FreedomFinder_Parameters_{contract.symbol}_{tf}_{days}d_{hours}h.csv", "w+")
                 break
             except IOError:
                 input(f"Cannot write results to csv file. Please close \n"
-                      f"Randomized_Parameters_{contract.symbol}_{tf}_{days}d_{hours}h.csv\nThen press Enter to "
+                      f"FreedomFinder_Parameters_{contract.symbol}_{tf}_{days}d_{hours}h.csv\nThen press Enter to "
                       f"retry.")
-    saved_parameters.to_csv(f"Randomized_Parameters_{contract.symbol}_{tf}_{days}d_{hours}h.csv")
+    saved_parameters.to_csv(f"FreedomFinder_Parameters_{contract.symbol}_{tf}_{days}d_{hours}h.csv")
     try:
         smtp = smtplib.SMTP("smtp.gmail.com", 587)
         smtp.starttls()
         smtp.login("guppy.bot.messenger@gmail.com", "otqcxemvnbxvfjpe")
-        subject = "BTOM Report"
-        text = f"Randomizer Finished"
+        subject = "FreedomFinder run complete"
+        text = f"FreedomFinder for {contract.symbol}, {tf}, {days} days, {hours} hours complete."
         message = "Subject: {} \n\n {}".format(subject, text)
         smtp.sendmail("guppy.bot.messenger@gmail.com", email, message)
         smtp.quit()
@@ -532,9 +538,8 @@ def multitest(contract: Contract, strategy: str, tf: str, days: int, hours: int,
         smtp = smtplib.SMTP("smtp.gmail.com", 587)
         smtp.starttls()
         smtp.login("guppy.bot.messenger@gmail.com", "otqcxemvnbxvfjpe")
-        subject = "BTOM Report"
-        text = f"{pop_size}x{generations}x{tests} optimization for {symbol.symbol}_{timeframe} from" \
-               f" {start} to {end} complete."
+        subject = "FreedomFinder run complete"
+        text = f"FreedomFinder for {contract.symbol}, {tf}, {days} days, {hours} hours complete."
         message = "Subject: {} \n\n {}".format(subject, text)
         smtp.sendmail("guppy.bot.messenger@gmail.com", email, message)
         smtp.quit()
@@ -613,7 +618,7 @@ def initial_tester(contract: Contract, strategy: str, tf: str, days: int, hours:
 
 
 def tester(contract: Contract, strategy: str, tf: str, days: int, hours: int, tests: int, initial_capital: int,
-           params: typing.Dict, mode: str, pool: str) -> pd.DataFrame:
+           params: typing.Dict, mode: str, pool: str, num_results: int) -> pd.DataFrame:
 
     df = pd.DataFrame()
     pnl_list = []
@@ -910,13 +915,11 @@ def tester(contract: Contract, strategy: str, tf: str, days: int, hours: int, te
             to_time_list.append(end)
             # return pnl, max_drawdown, win_rate, rr_long, rr_short, num_trades, max_losses, max_wins
             if mode == "s":
-                print(f"\rTest {i+1} of {tests}", end=" ")
+                print(f"\r{num_results} results complete. Test {i+1} of {tests}", end=" ")
             # else:
             #     print(f"\rParameter set #{iteration+1} Test {i+1} of {tests}", end=" ")
 
         i += 1
-
-    print("\n")
 
     df['from_time'] = from_time_list
     df['to_time'] = to_time_list
