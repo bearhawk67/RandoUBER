@@ -485,7 +485,7 @@ def multitest(contract: Contract, strategy: str, tf: str, days: int, hours: int,
                 print(f"\r{results} results complete. Running...", end=" ")
             i += 1
 
-        m_results = tester(contract, strategy, tf, days, hours, 50, initial_capital, backtest.parameters,
+        m_results = tester(contract, strategy, tf, days, hours, 100, initial_capital, backtest.parameters,
                            "s", pool, results)
         last_result = m_results.drop(m_results.index[:-1])
         last_result = last_result.reset_index()
